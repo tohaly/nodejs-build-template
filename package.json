@@ -1,8 +1,8 @@
 {
-  "name": "diploma-backend",
+  "name": "server",
   "version": "0.0.1",
   "description": "The server part of the web developer diploma in Yandex.Practicum",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "cross-env NODE_ENV=prodaction node app.js",
     "dev": "cross-env NODE_ENV=development nodemon app.js",
