@@ -1,0 +1,55 @@
+{
+  "name": "diploma-backend",
+  "version": "0.0.1",
+  "description": "The server part of the web developer diploma in Yandex.Practicum",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=prodaction node app.js",
+    "dev": "cross-env NODE_ENV=development nodemon app.js",
+    "eslint": "eslint --ext=.js ./ --ignore-path .gitignore",
+    "eslintFix": "eslint --ext=.js ./ --ignore-path .gitignore --fix",
+    "inspect": "cross-env NODE_ENV=development node --inspect app.js",
+    "deployEnv": "scp -r .env tohalb@84.201.143.66:/home/tohalb/server-for-mesto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tohaly/diploma-backend"
+  },
+  "keywords": [
+    "api",
+    "server",
+    "node.js",
+    "express.js",
+    "SQL",
+    "mongoDB",
+    "mongose"
+  ],
+  "author": "Anton Voytenko",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "celebrate": "^12.0.1",
+    "dotenv": "^8.2.0",
+    "dotenv-flow": "^3.1.0",
+    "express": "^4.17.1",
+    "express-winston": "^4.0.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.4",
+    "mongoose-unique-validator": "^2.0.3",
+    "validator": "^12.2.0",
+    "winston": "^3.2.1"
+  }
+}
